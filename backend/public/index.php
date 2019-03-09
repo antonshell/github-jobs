@@ -11,12 +11,7 @@ $klein = new \Klein\Klein();
 $client = new ApiClient();
 
 $klein->respond('GET', '/', function (Request $request, Response $response) use ($client) {
-    $data = ['key1' => 'val1'];
-    $response->json($data);
-});
-
-$klein->respond('GET', '/express_backend', function (Request $request, Response $response) use ($client) {
-    $data = ['key1' => 'val1'];
+    $data = ['status' => 'ok', 'message' => 'github-jobs'];
     $response->json($data);
 });
 
