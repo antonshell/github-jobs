@@ -1,0 +1,6 @@
+.idea
+backend/composer.lock
+backend/vendor
+
+frontend/build
+frontend/node_modules
